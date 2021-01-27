@@ -1,9 +1,13 @@
 package com.coconut.hey3;
 
+import java.util.Scanner;
+
 public class Test{  
 	public static void main(String args[]){ 
-		int num1= 472;
-		int num2= 385;
+		
+		Scanner sc= new Scanner(System.in);
+		int num1= sc.nextInt();
+		int num2= sc.nextInt();
 	
 		int five= num2/100; //3
 		int four= num2%100/10; //8
