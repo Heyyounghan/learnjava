@@ -4,13 +4,13 @@ public class Operator_10 {
 
 	public static void main(String[] args) {
 		
-		int a=-5;
-		int b=2;
-		int c= a>>>b;
+		int a=23;
+		int c=15;
 		
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
+		int result= a & c;
+		result = a|c;
+		result = ~a;
+		System.out.println(result);
 		
 			
 

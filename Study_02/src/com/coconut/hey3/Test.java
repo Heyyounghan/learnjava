@@ -21,4 +21,4 @@ public class Test{
 		System.out.println("총계:"+result );
 	}
 }
-// 백준 알고리즘 11번 
+// 백준 알고리즘 2588
