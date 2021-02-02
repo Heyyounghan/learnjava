@@ -17,7 +17,10 @@ public class Array_ex3 {
 		 * 	  -- 검색할 번호를 입력, 번호는 중복 불가. 
 		 * 	  --   학생의 이름, 번호, 국어, 영어,수학,총점, 평균 출력
 		 *    -- 입력한 번호가 정보 없으면 정보없음으로 하기.
-		 * 4. 프로그램 종료하기.
+		 * 4. 최우수 학생을 출력 >> 평균이 제일 높은 사람.
+		 * 
+		 * 
+		 * 5. 프로그램종료
 		 * 
 		 * 1,2,3 번의 활동이 끝나면 메뉴판이 다시 뜨기.
 		 **/
@@ -50,7 +53,8 @@ public class Array_ex3 {
 			System.out.println("1.학생 정보 입력");
 			System.out.println("2.학생 전체 정보 출력");
 			System.out.println("3. 학생 정보 검색");
-			System.out.println("4. 프로그램 종료");
+			System.out.println("4. 최우수 학생 출력 ");
+			System.out.println("5. 프로그램 종료");
 
 			//메뉴 번호 선택 입력하기. 
 			int sel= sc.nextInt();
@@ -88,13 +92,26 @@ public class Array_ex3 {
 						System.out.println("정보없음");
 					}
 					//else
-				}//if
 				}//for
-			
-			if(sel==4) {
+			}//if
+			else if(sel==4) {
+				double max=avg[0]; //최댓값 
+				int idx=0;
+				for(i=1; i<name.length;i++) {
+					if(max<avg[i]) {
+						max=avg[i];		
+						idx= i;
+					}
+				}//for
+				System.out.println("최우수학생은"+name[idx]+"평균"+max);
+			}//elseif
+
+			if(sel==5) {
 				//프로그램 종료
 				check=false;
 			}
+			
+
 		}//while문의 끝
 
 		System.out.println("------프로그램 종료------");
