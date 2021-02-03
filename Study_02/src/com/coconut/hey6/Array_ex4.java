@@ -53,7 +53,8 @@ public class Array_ex4 {
 			System.out.println("4. 우수학생 출력");
 			System.out.println("5. 학생검색삭제");
 			System.out.println("6. 학생정보추가");
-			System.out.println("7. 프로그램 종료");
+			System.out.println("7. 성적순출력");
+			System.out.println("8. 프로그램 종료");
 			num = sc.nextInt();
 
 			switch(num) {
@@ -221,6 +222,11 @@ public class Array_ex4 {
 				
 				break;
 			case 7:
+				System.out.println("성적을 높은 순으로 정렬합니다.");
+				
+				
+				break;
+			case 8:
 				System.out.println("프로그램 종료 코드");
 				//check = false;
 				check = !check;
