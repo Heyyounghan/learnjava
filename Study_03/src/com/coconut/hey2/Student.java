@@ -1,8 +1,6 @@
 package com.coconut.hey2;
 
 public class Student {
-
-	public static void main(String[] args) {
 		String name;
 		int num;
 		int kor;
@@ -10,7 +8,5 @@ public class Student {
 		int math;
 		int total;
 		double avg;
-
-	}
 
 }
