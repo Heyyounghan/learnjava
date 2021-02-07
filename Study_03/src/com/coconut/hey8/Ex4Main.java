@@ -28,9 +28,12 @@ public class Ex4Main {
 		}*/
 		
 		
-		MemberController mc= new MemberController();
+		//MemberController mc= new MemberController();
 		
-		mc.Start();
+		//mc.Start();
+		
+		StudentController studentController= new StudentController();
+		studentController.Start();
 
 	}
 
