@@ -11,7 +11,7 @@ public class StudentController {
 	public void Start() {
 		Scanner sc= new Scanner(System.in);
 		StudentService ss= new StudentService();
-		Student [] stu= ss.StudentInput();
+		Student [] stu= null;
 		
 		
 		System.out.println("----시작하기---");
@@ -23,12 +23,12 @@ public class StudentController {
 		System.out.println("6. 종료");
 		
 		
-		System.out.println("번호를 입력하세요.");
-		int sel= sc.nextInt();
 		
 		boolean check= true;
 		
 		while(check) {
+			System.out.println("번호를 입력하세요.");
+			int sel= sc.nextInt();
 			
 		switch(sel) {
 		
@@ -57,7 +57,7 @@ public class StudentController {
 			
 		case 5: 
 			System.out.println("5. 학생정보 삭제하기");
-			ss.StudentDelete(stu);
+			//ss.StudentDelete(stu);
 			
 			break;			
 		case 6:

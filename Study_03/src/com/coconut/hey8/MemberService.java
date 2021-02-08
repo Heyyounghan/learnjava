@@ -13,11 +13,18 @@ public class MemberService {
 	 * 회원들을 리턴하기.
 	 * 
 	 * */
+	
+	Scanner sc;
+	
+	public MemberService() {
+		sc= new Scanner(System.in);
+	}
+	
+	
 
 	public Member[] memberJoin() {
 		//가입할 회원 수 입력하기
 		System.out.println("가입할 회원수를 입력하세요.");
-		Scanner sc= new Scanner(System.in);
 
 		int count=sc.nextInt();
 
@@ -50,7 +57,7 @@ public class MemberService {
 	//
 
 	public Member memberLogin(Member[] members) {
-		Scanner sc= new Scanner(System.in);
+
 		Member member=new Member(); //멤버 선언 
 		//멤버를 받아서 선언하기.
 
