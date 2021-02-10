@@ -2,6 +2,18 @@ package com.panini.s1;
 
 public class Knight extends Character{
 	
+	private Weapon weapon;
+	private Item item;
+
+
+	public Item getItem() {
+		return item;
+	}
+
+	public void setItem(Item item) {
+		this.item = item;
+	}
+
 	public Knight() {
 		super("iy"); // 이게 생략이 되어있는거
 		

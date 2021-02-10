@@ -8,14 +8,14 @@ public class Ex1Main {
 		Tv tv=new Tv();
 		
 		//com.info();
-		phone.info();
+		//phone.info();
 		//tv.info();
 		
-		DigitalDevice dd = phone;
-		System.out.println(dd.getCompany());
-		System.out.println(dd.getBrand());
-		System.out.println(dd.getPrice());
-		System.out.println(dd.getPoint());
+		//DigitalDevice dd = phone;
+		//System.out.println(dd.getCompany());
+		//System.out.println(dd.getBrand());
+		//System.out.println(dd.getPrice());
+		//System.out.println(dd.getPoint());
 		
 		//phone = (Phone)dd;
 		//System.out.println(phone.getCompany());
@@ -34,15 +34,20 @@ public class Ex1Main {
 		
 		//부모형태 사용
 		
-		DigitalDevice [] ar = new DigitalDevice[3];
-		ar[0]=com;
-		ar[1]=phone;
-		ar[2]=tv;
+		//DigitalDevice [] ar = new DigitalDevice[3];
+		//ar[0]=com;
+		////ar[1]=phone;
+		//ar[2]=tv;
 		
 		
 		Customer cs = new Customer();
 		
-		cs.buy(phone.getPrice(),phone.getPoint());
+		cs.setMoney(5000);
+		cs.setPoint(20);
+		
+		cs.buy(com);
+		cs.buy(tv);
+		cs.buy(phone);
 
 		
 		
