@@ -8,7 +8,7 @@ public class Field {
 	protected int bearjelly;
 	protected int plushp=10;
 	protected int totaldistance= 0; //총 맵의 누적 길이
-	protected int distance=20;  // 맵길이
+	protected int distance=30;  // 맵길이
 	
 
 	public void startparty() {
