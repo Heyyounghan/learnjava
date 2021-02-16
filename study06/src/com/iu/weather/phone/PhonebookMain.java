@@ -8,6 +8,16 @@ public class PhonebookMain {
 		//3.phonebook검색(이름)
 		//v2. 추가 삭제 기능 
 		//4. 종료
+		
+		PhonebookController pbc = new PhonebookController();
+		//PhonebookInfo pbi = new PhonebookInfo();
+		
+		//pbi.makePhonebook();
+		
+		pbc.start();
+		
+		
+		
 
 	}
 
