@@ -23,16 +23,15 @@ public class IntegerTest {
 		//num= num1.intValue();
 //		System.out.println(num);
 		
-		String str="3000"; // use ParseInt
+//		String str="3000"; // use ParseInt
 		
-		int num2=Integer.parseInt(str);
+//		int num2=Integer.parseInt(str);
 		
-		System.out.println(num2);
+//		System.out.println(num2);
 		
 		Wrapper_ex1 wrapper = new Wrapper_ex1();
 		
-	//	wrapper.jumincheck();
-		
+		wrapper.jumincheck();
 		wrapper.getAge();
 		
 		

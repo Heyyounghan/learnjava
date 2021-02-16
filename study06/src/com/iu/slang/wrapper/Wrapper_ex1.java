@@ -1,6 +1,5 @@
 package com.iu.slang.wrapper;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Wrapper_ex1 {
@@ -20,14 +19,16 @@ public class Wrapper_ex1 {
 	 * 5. 체크용 번호와 같은지 비교한다. 같으면 올바른 주민번호, 아니면 옳지못한 주민번호 
 	 * */
 
+		private Scanner sc;
+		
 
 	public void jumincheck() {
 		int[] number= new int[13]; //배열 생성하기 
 		int[] ex1= {2,3,4,5,6,7,8,9,2,3,4,5};
-		int total = 0;
-		Scanner sc= new Scanner(System.in);
+		sc= new Scanner(System.in);
 		System.out.println("주민번호 입력해주세요.");
 		String num= sc.next(); // 주민번호 입력받기.
+		int total = 0;
 
 		num= num.replace("-",""); // -를 공백으로 바꿔주기
 
@@ -42,15 +43,12 @@ public class Wrapper_ex1 {
 		for(int i=0; i<number.length-1; i++) {
 			number[i]= number[i]*ex1[i];
 		}
-
-		System.out.println(Arrays.toString(number));
-
-
+		
 		//total값 구해주고 
 		for(int i=0; i<number.length-1;i++) {
 			total+=number[i];
 		}
-		//System.out.println(total);
+
 
 		//총합을 나눈다. other= 나머지
 		int other= total%11;
@@ -69,10 +67,6 @@ public class Wrapper_ex1 {
 		}else {
 			System.out.println("다시.");
 		}
-
-
-
-
 	}
 	//ver2. getAge
 	/* 주민번호 입력받기
@@ -83,10 +77,9 @@ public class Wrapper_ex1 {
 	 * */
 
 	public void getAge() {
-		
-
 		StringBuffer sb= new StringBuffer();
-		Scanner sc= new Scanner(System.in);
+		sc= new Scanner(System.in);
+		
 		int now= 2021;
 		System.out.println("주민번호 입력해주세요.");
 		String num= sc.next(); // 주민번호 입력받기.
@@ -101,7 +94,6 @@ public class Wrapper_ex1 {
 		if(num1==3 || num1==4) {
 			String year20= sb.append(20)+num3;
 			int year11= Integer.parseInt(year20); //연도 출력 
-			
 			int age= now-year11;
 			System.out.println(age+1+"세 입니다.");
 
@@ -133,9 +125,6 @@ public class Wrapper_ex1 {
 		}else {
 			System.out.println("mon이 잘못됌");
 		}
-		
-		
-
 
 
 
