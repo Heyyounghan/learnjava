@@ -17,12 +17,12 @@ public class ObjectArray {
 		Object[] arr= new Object[ar.length+1];
 		
 		for(int i=0; i<ar.length; i++) {
-			arr[i]=obj;
-			//arr[i]=ar[i];
+			//arr[i]=obj;
+			arr[i]=ar[i];
 		}
 		
+		arr[ar.length]=obj;
 		ar=arr;
-		//arr[ar.length]=obj;
 		//this.ar = arr;
 		
 		return ar.length;
@@ -41,7 +41,7 @@ public class ObjectArray {
 		
 		
 		for(int i=1; i<arr.length; i++) {
-			arr[i]=ar[i];
+			arr[i-1]=ar[i]; 
 		} // 0번이 아닌 1번부터 넣어줌! 그니까 0번은 걍 사라짐 바이바이 
 		
 		//arr[ar.length]=obj;
@@ -63,6 +63,30 @@ public class ObjectArray {
 		
 		return ar.length; // 하나는 줄었음. 
 	}
+	
+	//remove() 배열의 길이 리턴 매개변수로 지우려는 인덱번호 
+	
+	public int remove(int j) {
+		
+		Object[] arr = new Object[ar.length-1];
+		
+		int idx=0; //arr 인덱스 번호
+		
+		for(int i=0; i<ar.length; i++) {
+			if(idx==i) {
+				continue;				
+			}
+			arr[idx]=ar[i];
+			idx++;
+		}
+		
+		this.ar= arr;	
+		
+		
+		return ar.length;
+		
+	}
+	
 
 	public void removeall() {
 		Object[] arr= new Object[0]; //배열 0개를 선언 
@@ -77,6 +101,11 @@ public class ObjectArray {
 	public int size() {
 		
 		return ar.length; // 그냥 길이값 리턴.
+	}
+	
+	public  Object get(int i) {
+		//매개변수= 인덱스 번호. 배열에서 해당 인덱스 요소를 리턴 
+		return ar[i];
 	}
 
 	

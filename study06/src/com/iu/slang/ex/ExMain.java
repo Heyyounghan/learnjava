@@ -10,7 +10,7 @@ public class ExMain {
 		//t1과 t2를 담을 수 있는 배열을 선언.
 		//같은 데이터타입을 담을 수 있고, 선언을 할 수 있
 		//상속과 다형성 
-		Object[] obj= new Object[3];
+		Object[] obj= new Object[2];
 		
 		obj[0]= t1;
 		obj[1]= t2;
@@ -24,7 +24,6 @@ public class ExMain {
 		System.out.println(oba.ar.length);
 		
 		oba.add(t1);
-		
 		System.out.println(oba.ar.length);
 		oba.add(t2);
 		
@@ -40,8 +39,9 @@ public class ExMain {
 	//	oba.removeall();
 	//	System.out.println(oba.ar.length);
 		
-		oba.size();
-		System.out.println(oba.ar.length);
+	//	oba.size();
+		oba.get(0);
+		System.out.println(oba.get(0));
 		
 				
 
